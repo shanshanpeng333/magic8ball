@@ -1,0 +1,20 @@
+{
+    "short_name": "Magic8Ball App",
+    "name": "Magic 8 Ball App from class",
+    "icons": [
+      {
+        "src": "favicon.ico",
+        "sizes": "64x64 32x32 24x24 16x16",
+        "type": "image/x-icon"
+      },
+      {  
+        "src": "Emojione1_1F3B1.svg.png",  
+        "sizes": "512x512",  
+        "type": "image/png"  
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }

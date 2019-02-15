@@ -1,0 +1,45 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <!-- Tell the browser it's a PWA -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Tell iOS it's a PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="apple-touch-icon" sizes="512x512" href="Emojione1_1F3B1.svg.png">
+    <link rel="favicon.ico" href="favicon.ico">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Magic 8 Ball App</title>
+</head>
+
+<body background = "Dave Langguth Sabian.jpg">
+    <h2 style="color:brown;">Happy Friday!. Let's play magic 8 ball game.</h2>
+
+    <form id="myForm">
+        <p><input placeholder="enter your question" /></p>
+        <p id="response">hello there world!</p>
+        <button type="submit">Ask the magic 8 ball</button>
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            let aChoices = [
+                "certainly",
+                "very likely",
+                "no"
+            ];
+            let nChoice = Math.floor(Math.random() * aChoices.length);
+            document.getElementById("response").innerHTML = aChoices[nChoice];
+
+            event.preventDefault()
+        });
+    </script>
+
+</body>
