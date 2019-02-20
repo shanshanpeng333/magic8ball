@@ -1,45 +1,159 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <!-- Tell the browser it's a PWA -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <!-- Tell iOS it's a PWA -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="apple-touch-icon" sizes="512x512" href="Emojione1_1F3B1.svg.png">
-    <link rel="favicon.ico" href="favicon.ico">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <title>Magic 8 Ball App</title>
-</head>
-
-<body background = "Dave Langguth Sabian.jpg">
-    <h2 style="color:brown;">Happy Friday!. Let's play magic 8 ball game.</h2>
-
-    <form id="myForm">
-        <p><input placeholder="enter your question" /></p>
-        <p id="response">hello there world!</p>
-        <button type="submit">Ask the magic 8 ball</button>
-    </form>
-
-    <script>
-        document.getElementById("myForm").addEventListener("submit", function (event) {
-            let aChoices = [
-                "certainly",
-                "very likely",
-                "no"
-            ];
-            let nChoice = Math.floor(Math.random() * aChoices.length);
-            document.getElementById("response").innerHTML = aChoices[nChoice];
-
-            event.preventDefault()
+<!DOCTYPE html> <!-- The new doctype -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Tastes of China</title>
+        <link rel="icon" type="image/ico" href="images/favicon.png">
+	    <link rel="stylesheet" href="styles/normalize.css">
+	    <link rel="stylesheet" href="styles/main.css">
+	    
+	    <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+	    <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js">
+        </script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
         });
-    </script>
+        </script>
+    </head>
 
-</body>
+    <body>
+    	<section id="page"> <!-- Defining the #page section with the section tag -->
+            <header> <!-- Defining the header section of the page with the appropriate tag -->
+               <img id="logo" src="images/soup.png" alt="LOGO">
+                <hgroup>
+					<h1>Tastes of China</h1>
+					<h3>Enjoy the temptation on the tongue</h3>
+				</hgroup>
+                <nav id = "mobile_menu"></nav>
+                <nav id="nav_menu"> <!-- The nav link semantically marks your main site navigation -->
+                    <ul>
+                    <li><a href="default.html">Home</a></li>
+                    <li><a href="pages/Dumplings.html">Dumpling</a>
+                    <ul>
+                        <li><a href="https://www.chinahighlights.com/travelguide/chinese-food/chinese-dumplings.htm">Classic Dish</a></li>
+                        <li><a href="https://www.chinahighlights.com/travelguide/chinese-food/cooking/dumplings.htm">Recipes</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="pages/SpringRolls.html">SpringRoll</a>
+                    <ul>
+                       <li><a href="https://en.wikipedia.org/wiki/Spring_roll">Wikipedia</a></li>
+                        <li><a href="https://www.chinahighlights.com/travelguide/chinese-food/chinese-new-year-food.htm">Lucky Food</a></li>
+                        <li><a href="https://www.chinahighlights.com/travelguide/chinese-food/chinese-dumplings.htm">New Year Food</a></li>
+                     </ul>
+                    </li>
+                    <li><a href="pages/HotPot.html">HotPot</a>
+                    <ul>
+                        <li><a href="https://www.chinahighlights.com/travelguide/chinese-food/hotpot.htm">Spicy Dish</a></li>
+                        <li><a href="https://www.yelp.ca/search?cflt=hotpot&find_loc=Waterloo%2C+ON">Waterloo</a></li>
+                     </ul>
+                    </li>
+				    <li><a href="pages/MAPoTofu.html">MAPo Tofu</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="articles"> <!-- A new section with the articles -->
+
+				<!-- Article 1 start -->
+                <div class="line"></div>  <!-- Dividing line -->                
+
+                <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+                    <h2><i class="fas fa-thumbs-up"></i>Dumplings<a class="go_up" href="#" class="up">&nbsp; &uparrow;</a></h2>
+
+                    <div class="line"></div>
+
+                    <div class="articleBody clear">
+
+                    	<figure> <!-- The figure tag marks data (usually an image) that is part of the article -->
+	                    	<a href="pages/Dumplings.html"><img src="images/Dumplings.jpg" alt="Dumplings image" width="500" height="300" title="Boiled Dumplings" /></a>
+                        </figure>
+
+                        <p>Dumplings are a famous traditional northern Chinese food. They are half-moon-shaped, soft, stuffed pasta — like ravioli. Dumplings are named according to their various fillings and cooking methods (fried, heated in boiling water, or steamed).</p>
+                        <p>Dumplings have also become a common type of food in southern China, where people don't grow/eat wheat as a rule. "Southern dumpling” skins are typically made of rice.Eating dumplings at the Spring Festival is said to bring good fortune financially, as dumplings look like ingots, the currency used in old times. Dumplings are ordered in (traditionally bamboo) trays called long of 10 or 20 dumplings. So you can say yī lóng (ee-long/ 'one tray'), followed by your choice of filling, to order.</p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>
+				<!-- Article 1 end -->
+
+
+				<!-- Article 2 start -->
+                <div class="line"></div>
+
+                <article id="article2">
+                    <h2><i class="fas fa-heart"></i>Spring Rolls<a class="go_up" href="#" class="up">&nbsp; &uparrow;</a></h2>
+
+                    <div class="line"></div>
+
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="pages/SpringRolls.html"><img src="images/Spring Rolls.jpg" alt="Spring Rolls image" width="500" height="300" title="Different kinds of Spring Rolls"/></a>
+                        </figure>
+
+                        <p>Spring rolls, also named 'spring pancakes' or 'thin pancakes', are a traditional Chinese Chinese New Year food. They are popular around the world, but especially in regions south of the Yangtze River.</p>
+                        <p>Spring rolls are usually eaten during the Spring Festival in mainland China, hence the name. Eating spring rolls is a way to welcome the arrival of spring. The golden cylindrical-shaped rolls represent gold bars — which symbolize wealth.Chinese spring rolls are generally smaller in China. A 20-cm dim sum dish can hold more than ten.Spring rolls served in Chinese restaurants in America reportedly usually have meat fillings, and can be as big as hamburgers. UK Chinese takeaway spring rolls are about an inch wide and 3 inches long (3 x 8 cm).They fill the wrappers with cold vegetables or fried fillings, such as sliced pork with spring onions or garlic. Chili powder, soy sauce, vinegar, paprika, processed sesame seeds, and crushed peanuts are added as seasonings. </p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>
+				<!-- Article 2 end -->
+				
+
+				<!-- Article 3 start -->
+                <div class="line"></div>
+
+                <article id="article3">
+                    <h2><i class="fab fa-hotjar"></i>Hot Pot<a class="go_up" href="#" class="up">&nbsp; &uparrow;</a></h2>
+
+                    <div class="line"></div>
+
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="pages/HotPot.html"><img src="images/Hot Pot.jpg" alt="Hot Pot image" width="500" height="300" title="Chengdu double-flavoured Hot Pot" /></a>
+                        </figure>
+
+                        <p>Chinese hotpot (huǒguō /hwor-gwor/ 'fire-pot'), also known as Chinese fondue, is one of the most popular meals in China. It consists of a simmering metal pot with broth at the center of a table, and all raw ingredients placed beside the metal pot, so people can add and cook whatever they like in the broth.</p>
+                        <p>The hotpot has a long history of over 1,000 years in China. It used to be favored only in winter, but recently hotpot has been appearing on tables all year round.There are two other important reasons for Chinese liking hotpot: the first one is that it is a great way to socialize. The other is that hotpot is a "healthy meal".Two of the most popular hotpots are Sichuan hotpot and Beijing mutton hotpot (instant-boiled mutton).Sichuan hotpot is the most famous Chinese hotpot. Sichuan hotpot is famous for its numbing and spicy flavor, resulting from a special seasoning — Sichuan pepper — and other spicy ingredients like chili added to it, which marks its difference from other hotpots. </p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>
+				<!-- Article 3 end -->
+				
+
+				<!-- Article 4 start -->
+                <div class="line"></div>
+
+                <article id="article4">
+                    <h2><i class="fas fa-smile"></i>MA Po Tofu<a class="go_up" href="#" class="up">&nbsp; &uparrow;</a></h2>
+
+                    <div class="line"></div>
+
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="pages/MAPoTofu.html"><img src="images/MA Po Tofu.jpg" alt="MA Po Tofu image" width="500" height="300" title="Sichuan MA Po Tofu" /></a>
+                        </figure>
+
+                        <p>Mapo tofu, one of the most notable regional Chinese dishes has become a popular Sichuan dish around the world. It can be said that, "Tourists who don't taste mapo tofu have not really visited Sichuan." Because of its tasty flavor, it has become a famous dish not only in China, but also in Japan, Singapore, and many other countries.</p>
+                        <p>Mapo tofu is a combination of tender tofu and spicy chili-and-bean-based sauce, sprinkled with minced meat, usually pork or beef, and topped with some chopped scallion pieces. The snow-white bean curd, red beef, and green scallion contribute to a colorful, spicy, tender, and aromatic dish.The taste of mapo tofu is fittingly described as numbing, spicy-hot, fresh, tender and soft, aromatic and flaky. Mapo tofu is not exclusive to Sichuan province and is easy to find outside of China. The most authentic brand is Sichuan Chenshi Mapo Tofu. It is a dish handed down from imperial times, and the signature dish of Chen Mapo Tofu Restaurant.</p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>
+				<!-- Article 4 end -->
+
+            </section>
+
+        <footer> <!-- Marking the footer section -->
+
+           <div class="line"></div>
+
+           <p>Copyright 2015 - vwclassics.com</p> <!-- Change the copyright notice -->
+
+           <a href="http://consolidatedlearning.ca/" > Steves Website</a>
+
+        </footer>
+
+		</section> <!-- Closing the #page section -->
+
+    </body>
+</html>
