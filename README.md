@@ -7,11 +7,11 @@ More details refer to https://help.github.com/articles/adding-an-existing-projec
 3. use firebase to deploy this project:
 1) create a free account in firebase and create a new project named as "magic8ball"
 2) use Visual Studio Code's command line to deploy
->Npm install -g firebase-tools
->firebase login
->fire init
->firebase use –add 
->firebase deploy
+--Npm install -g firebase-tools
+--firebase login
+--fire init
+--firebase use –add 
+--firebase deploy
 Then there will be a Hosting URL that is the published website.
 The website is:
 https://magic-8-ball-ee78b.firebaseapp.com/
