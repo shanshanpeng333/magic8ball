@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- The new doctype -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Hot pot</title>
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../styles/HotPot.css">
+    </head>
+
+    <body>
+
+    	<section id="page"> <!-- Defining the #page section with the section tag -->
+
+            <header> <!-- Defining the header section of the page with the appropriate tag -->
+                <img src="../images/soup.png" alt="LOGO">
+                <hgroup>
+					<h1>Tastes of China</h1>
+					<h3>Enjoy the temptation on the tongue</h3>
+				</hgroup>
+
+                <nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
+                    <ul>
+                        <li><a href="../default.html">Home Page</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="articles"> <!-- A new section with the articles -->
+
+                <div class="line"></div>  <!-- Dividing line -->
+                <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+                    <h2>Hot Pot</h2>
+                    <div class="line"></div>
+                    <div class="articleBody clear">
+                       <P>Sichuan hotpot is the most famous Chinese hotpot. Now it is very popular and can be found in almost every city in China. </P>
+                        <picture>
+                            <source media="(min-width: 960px)" srcset="../images/hotpot1.jpg" alt="Chinese food map">
+                            <source media="(min-width: 768px)" srcset="../images/hotpot2.jpg" alt="Sichuan stype">
+                            <source media="(min-width: 479px)" srcset="../images/hotpot3.jpg" alt="Beijing Style">
+                            <img src="../images/hotpot4.jpg" alt="hot pot">
+                        </picture>
+                    </div>
+                </article>
+            </section>
+
+        <footer> <!-- Marking the footer section -->
+           <div class="line"></div>
+
+           <p>Copyright 2015 - vwclassics.com</p> <!-- Change the copyright notice -->
+
+           <a href="http://consolidatedlearning.ca/" > Steves Website</a>
+        </footer>
+
+		</section> <!-- Closing the #page section -->
+
+    </body>
+</html>
